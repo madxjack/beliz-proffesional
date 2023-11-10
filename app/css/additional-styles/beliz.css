@@ -1,0 +1,20 @@
+/* details > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+details > summary h1 {
+    flex: 1;
+    margin: 0;
+}
+
+details > summary::after {
+    content: "▼";
+    margin: 0;
+    flex-basis: 10%;
+}
+
+details[open] > summary::after {
+    content: "▲";
+} */
