@@ -32,6 +32,10 @@ export default function Header() {
             <Logo />
           </div>
 
+          <div className= "font-bold">
+            BELIZ
+          </div> 
+
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
