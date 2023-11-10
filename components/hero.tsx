@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/hero-image.png'
+import VideoThumb from '@/public/images/expositor.jpeg'
 import ModalVideo from '@/components/modal-video'
 
 export default function Hero() {
@@ -31,15 +31,16 @@ export default function Hero() {
           <div className="text-center pb-12 md:pb-16">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Beliz <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">StickWax</span></h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Cera natural en barra para el cabello. Controla los Babyhairs y crea estilos únicos fácilmente.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <div>
+                {/* <div>
                   <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
                 </div>
                 <div>
                   <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
-                </div>
+                </div> */}
+                <img src="/images/hairwaxstick.jpg" alt="Hero" className="w-full sm:max-w-xs mt-8 sm:mt-0" />
               </div>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Cera natural en barra para el cabello. Controla los Babyhairs y crea estilos únicos fácilmente.</p>
             </div>
           </div>
 
@@ -49,7 +50,7 @@ export default function Hero() {
             thumbWidth={768}
             thumbHeight={432}
             thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
+            video="/videos/collab1.mp4"
             videoWidth={1920}
             videoHeight={1080} />
 
