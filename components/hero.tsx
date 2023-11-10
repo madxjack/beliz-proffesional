@@ -29,7 +29,7 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-4 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Beliz <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-950 to-stone-100">StickWax</span></h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Beliz <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-950 to-stone-300">StickWax</span></h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Cera natural en barra para el cabello. Controla los Babyhairs y crea estilos únicos fácilmente.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
