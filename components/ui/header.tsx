@@ -33,7 +33,7 @@ export default function Header() {
           </div>
 
           <div className= "font-bold">
-            BELIZ
+            BELIZ BEAUTY
           </div> 
 
           {/* Desktop navigation */}
