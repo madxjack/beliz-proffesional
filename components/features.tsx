@@ -23,14 +23,9 @@ export default function Features() {
 
   return (
     <section className="relative">
-
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute hidden sm:block left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
-
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-4 md:pt-20 transition-all">
-
+        <div className="pt-4 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto pb-12 md:pb-16 text-left">
             <h1 className="h2 mb-4 ">Ingredientes Naturales</h1>
@@ -45,54 +40,52 @@ export default function Features() {
               <h3 className="h3 mb-3 md:text-center ">¡Domina los Cabellos Rebeldes y Controla los Babyhairs! </h3>
             </div>
             <div className='md:flex md:flex-1 md:gap-8 md:justify-between'>
-              {/* Images */}
-              <div className='relative flex flex-col mb-4'>
-                <Transition
-                  show={tab === 1}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 translate-y-16"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 -translate-y-16"
-                  beforeEnter={() => heightFix()}
-                  unmount={false}
-                >
-                  <Image
-                    src={FeaturesElement1}
-                    alt="Features bg"
-                    className="md:max-w-none mx-auto"
-                    width={500}
-                    height={500}
-                  />
-                </Transition>
-                <Transition
-                  show={tab === 2}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 translate-y-16"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 -translate-y-16"
-                  beforeEnter={() => heightFix()}
-                  unmount={false}
-                >
-                  <Image
-                    src={FeaturesElement2}
-                    alt="Features bg"
-                    className="md:max-w-none mx-auto"
-                    width={500}
-                    height={500}
-                  />
-                </Transition>
+              <div className='transition-all' >
+                <div className='relative inline-flex flex-col' ref={tabs} >
+                  {/* Item 1 */}
+                  <Transition
+                    show={tab === 1}
+                    appear={true}
+                    enter="transition ease-in-out duration-700 transform order-first"
+                    enterFrom="opacity-0 "
+                    enterTo="opacity-100 "
+                    leave="transition ease-in-out duration-300 transform absolute"
+                    leaveFrom="opacity-100 "
+                    leaveTo="opacity-0 "
+                    unmount={false}
+                  >
+                    <Image
+                      src={FeaturesElement1}
+                      alt="Features bg"
+                      className="md:max-w-none animate-float left-0"
+                      width={500}
+                    />
+                  </Transition>
+                  {/* Item 2 */}
+                  <Transition
+                    show={tab === 2}
+                    appear={true}
+                    enter="transition ease-in-out duration-700 transform order-first"
+                    enterFrom="opacity-0 "
+                    enterTo="opacity-100 "
+                    leave="transition ease-in-out duration-300 transform absolute"
+                    leaveFrom="opacity-100 "
+                    leaveTo="opacity-0 "
+                    unmount={false}
+                  >
+                    <Image
+                      src={FeaturesElement2}
+                      alt="Features bg"
+                      className="md:max-w-none animate-float left-0"
+                      width={500}
+                    />
+                  </Transition>
+                </div>
               </div>
+              {/* Images */}
 
               {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
+              <div className="mb-8 md:mb-0 flex-1">
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   href="#0"
