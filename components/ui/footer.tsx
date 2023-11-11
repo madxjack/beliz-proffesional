@@ -6,20 +6,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
 
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200 text-center">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-8 py-8 md:py-12 border-t border-gray-200 text-center md:items-center">
 
           {/* 1st block */}
-          <div className="sm:col-span-12 lg:col-span-3 ">
-            <div className="mb-2">
-              <Logo />
-            </div>
-            {/* <div className="text-sm text-gray-600">
-              <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
-            </div> */}
-          </div>
+          <img src='/images/logo.png' alt="Beliz Logo" className="h-[150px] self-center w-auto rounded-full mb-2 md:col-start-1 md:h-full md:w-full md:flex md:justify-center" />
 
           {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          <div className='md:col-start-2'>
             <h6 className="text-gray-800 text-xl font-bold mb-2">Información</h6>
             <ul className="text-lg">
               <li className="mb-2 ">
@@ -29,6 +22,8 @@ export default function Footer() {
                 <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Politica de cookies</a>
               </li>
             </ul>
+          </div>
+          <div className='md:col-start-3'>
             <h6 className="text-gray-800 font-bold text-xl mb-2">La empresa</h6>
             <ul className="text-lg">
               <li className="mb-2">
